@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Officelite coming soon site</title>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <img class="logo" src="assets/shared/logo.svg" alt="Officelite">
+      <div class="flex">
+        <img class="hero__img" src="./assets/home/illustration-charts.svg" alt="charts">
+        <section class="hero__content">
+          <h1 class="title">A simple solution to complex tasks is coming soon</h1>
+          <p>
+            Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
+            collaboration platform built with an intuitive interface to improve productivity.
+          </p>
+          <a href="./sign-up.html" class="btn">Get Started</a>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="card__wrapper container flow-content">
+        <div class="card bg--light">
+          <p class="plan">Basic</p>
+          <div class="price">
+            <h2 class="price__text">Free</h2>
+            <p>Up to 5 users for free</p>
+          </div>
+          <ul class="features flow-content">
+            <li>Basic document collaboration</li>
+            <li>2 gb storage</li>
+            <li>Great security and support</li>
+          </ul>
+          <a href="./sign-up.html" class="btn">Try for Free</a>
+        </div>
+        <div class="card bg--accent">
+          <p class="plan">Pro</p>
+          <div class="price">
+            <h2 class="price__text">$9.99</h2>
+            <p>Per user, billed monthly</p>
+          </div>
+          <ul class="features flow-content">
+            <li>All essential integrations</li>
+            <li>50 gb storage</li>
+            <li>More control and insights</li>
+          </ul>
+          <a href="./sign-up.html" class="btn">Try for Free</a>
+        </div>
+        <div class="card bg--light">
+          <p class="plan">Ultimate</p>
+          <div class="price">
+            <h2 class="price__text">$19.99</h2>
+            <p>Per user, billed monthly</p>
+          </div>
+          <ul class="features flow-content">
+            <li>Robust work management</li>
+            <li>100 gb storage</li>
+            <li>VIP support</li>
+          </ul>
+          <a href="./sign-up.html" class="btn">Try for Free</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg--dark">
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    <div class="container">
+      <h3 class="coming">Coming <span class="accent">4 Nov 2022</span></h3>
+      <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+      <div class="timer-card__wrapper"></div>
+      <a href="./sign-up.html" class="btn">Get Started</a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

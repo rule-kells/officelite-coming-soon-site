@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Officelite coming soon site</title>
+</head>
+
+<body class="signup">
+  <div class="grid">
+    <header class="signup-header container">
+      <nav><a href="./index.html"><img class="logo" src="./assets/shared/logo.svg" alt=""></a></nav>
+    </header>
+    <main class="signup-main container">
+      <div class="hero-signup bg-signup">
+        <section class="hero-sigup__content">
+          <h1 class="title">Work smarter. Save time.</h1>
+          <p>
+            Easily manage your projects. Get on the list and receive in-app perks available only to
+            early subscribers. We are moving into final development and getting ready for official launch soon.
+          </p>
+          <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+          <h3 class="coming">Coming <span class="accent">4 Nov 2022</span></h3>
+        </section>
+        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+        <div class="timer-card__wrapper"></div>
+      </div>
+      <form id="form" name="form" action="./index.html" method="get" class="flow-content">
+        <label for="name" aria-label="Name"></label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <label for="email" aria-label="Email Address"></label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="hidden" name="activeDropdown" id="activeDropdown" value="all">
+        <ul class="membership" name="membership" data-no-submit>
+          <li class="membership__header"><a href="#">Basic Pack <span>Free</span></a></li>
+          <ul id="membership" class="membership__dropdown">
+            <li onclick="if(checkInputs()) {submitForm('basic')}"" type="submit"  class="membership__item membership__item--free">
+              <label ><input type="radio">Basic Pack
+                <span>Free</span></label>
+            </li>
+            <li onclick="if(checkInputs()) {submitForm('pro')}"" type="submit"  class="membership__item membership__item--pro">
+              <label><input type="radio">Pro Pack
+                <span>$9.99</span></label>
+            </li>
+            <li  onclick="if(checkInputs()) {submitForm('ultimate')};" type="submit" class="membership__item membership__item--ultimate">
+              <label ><input type="radio">Ultimate Pack</label>
+                <span>$19.99</span>
+            </li>
+          </ul>
+          </li>
+        </ul>
+
+        <label for="phone" aria-label="Phone Number"></label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+        <label for="company" aria-label="Company"></label>
+        <input type="text" name="company" id="company" placeholder="Company" required>
+        <button class="btn-signup" type="submit" >Get on the list</button>
+      </form>
+    </main>
+    <footer class="bg-signup"></footer>
+  </div>
+</body>
+
+</html>
