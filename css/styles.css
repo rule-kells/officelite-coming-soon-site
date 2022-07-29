@@ -154,9 +154,14 @@ body {
 
 }
 
+.hero__img img{
+    height: 192px;
+    margin: 0 auto;
+}
+
 .hero__img {
     object-fit: cover;
-    height: 192px;
+
 }
 
 .hero__content .title {
@@ -366,10 +371,14 @@ main {
         z-index: -1;
     }
 
+    .hero__img img {
+        height: 314px;
+    }
+
     .hero__img {
         margin-left: auto;
         margin-right: 0;
-        height: 314px;
+        
     }
 
     .hero__content {
@@ -539,7 +548,9 @@ main {
         z-index: -1;
     }
 
-    .hero__img {
+
+    .hero__img img{
+        width: 470px;
         height: 531px;
     }
 
@@ -555,7 +566,7 @@ main {
     .hero__content p {
         margin: 1.5rem 0 2rem;
     }
-
+    
 
     /* cards  */
 
@@ -574,6 +585,7 @@ main {
         text-align: center;
         padding: 2.5rem 4rem;
     }
+    
 
 
 
